@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Palanquin+Dark&family=Roboto:ital,wght@0,400;1,100&family=Rouge+Script&display=swap');
+
+/* font-family: 'Palanquin Dark', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Rouge Script', cursive; */
+
+/* Nav Bar */
+
+.nav{
+    background-color: #262F36;
+    color: white;
+    height: 12vh;
+    width: 90%;
+    padding: 5px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 1000;
+}
+
+.nav-l {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+.nav-l img{
+    height: 11vh;
+}
+
+.logo-txt h1{
+    margin: 5px 0 0px 8px;
+    font-weight: 400;
+}
+
+.sub-txt{
+    font-family: 'Rouge Script', cursive;
+    font-size: 1.5rem;
+    margin: 0 8px;
+}
+
+.nav-r{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav-r a{
+    margin-right: 80px;
+    font-size: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    /* background-color: aqua; */
+}
+
+.nav-r a:hover, .nav-r a:active {
+    color:#2b98ec;
+}
+
+.border{
+    position: fixed;
+    top: 13vh;
+    width: 100%;
+    height: 5px;
+    background-color:#2b98ec;
+    z-index: 1000;
+    /* background-color: #2aafae; */
+}
+
+
+/* Hero */
+
+.hero{
+    overflow: hidden;
+}
+
+.hero img{
+    width: 100%;
+    height: 95vh;
+    margin-top: 12vh;
+    margin-right: -100px;
+    opacity: 0.7;
+    /* object-fit: cover; 
+    object-position: -20% 0; */
+}
+
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    margin-right: -100px;
+    /* background-color: black; */
+}
+
+.hero-txt{
+    position: absolute;
+    top: 40vh;
+    left: 10vw;
+}
+
+.hero-txt h1{
+    font-family: 'Palanquin Dark', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 5rem;
+    margin: 0;
+}
+
+.txt1{
+    color: white;
+    background-color: #262F36;
+    text-transform: uppercase;
+    font-size: 3rem;
+padding: 0 0 0 3px;
+
+/* width: 25vw; */
+    /* text-align: justify; */
+}
+
+.txt2{
+    margin: 20px 0;
+    font-size: 1.2rem;
+}
+
+/* Details */
+
+.details{
+    width: 100;
+    height: 32vh;
+    margin-top: 100vh;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    
+}
+
+.detail-overlay{
+    background-color: #2b98ec;
+    /* opacity: 0.5; */
+    z-index: 2000;
+}
+
+/* .detail-box-1{
+    position: relative;
+    height: 100%;
+    z-index: -10;
+    /* opacity: 0.2; */
+    /* background-image: url("../images/bg1.jpg");
+}
+
+.detail-box-2{
+    height: 100%;
+    background-image: url("../images/bg2.jpg");
+}
+
+.detail-box-3{
+    height: 100%;
+    background-image: url("../images/bg3.jpg");
+} */ */
+
+.d-overlay {
+    background-color: rgba(50, 151, 168, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
