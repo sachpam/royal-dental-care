@@ -44,6 +44,7 @@ function Nav() {
           {/* <Image src={image} alt="logo" height="7vh" padding="0 5px" /> */}
           <Box>
             <Heading
+              textAlign={["center", "left", "left", "left"]}
               fontFamily="Poppins"
               fontWeight="lighter"
               color="white"

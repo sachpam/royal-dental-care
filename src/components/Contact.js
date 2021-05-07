@@ -75,6 +75,7 @@ export default function Contact() {
                   placeholder="Enter Full Name"
                   className="form-control"
                   name="from_name"
+                  marginBottom="15px"
                 />
               </div>
               <div className="col-8 form-group pt-2 mx-auto">
@@ -85,6 +86,7 @@ export default function Contact() {
                   className="form-control"
                   placeholder="Email Address"
                   name="email"
+                  marginBottom="15px"
                 />
               </div>
               <div className="col-8 form-group pt-2 mx-auto">

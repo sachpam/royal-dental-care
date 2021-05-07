@@ -172,7 +172,7 @@ function Footer() {
         backgroundColor="#262F36"
         color="#adb5bd"
       >
-        2021 © All rights reserved
+        2021 © All Rights Reserved
       </Box>
     </Box>
   );

@@ -29,10 +29,11 @@ function Hero() {
           top="50%"
           left={["50%", "50%", "50%", "50%", "25%"]}
           transform="translate(-50%, -50%)"
+          width={["85%", "", "", ""]}
         >
           <Fade top>
             <Heading
-              fontSize={["2xl", "4xl", "4xl", "7xl"]}
+              fontSize={["4xl", "4xl", "4xl", "7xl"]}
               color="white"
               // bgGradient="linear(to-b, blue.300, blue.600)"
               // bgClip="text"
@@ -46,7 +47,7 @@ function Hero() {
 
           <Fade top>
             <Heading
-              fontSize={["2xl", "4xl", "4xl", "7xl"]}
+              fontSize={["4xl", "4xl", "4xl", "7xl"]}
               color="white"
               // bgGradient="linear(to-b, blue.300, blue.600)"
               // bgClip="text"
