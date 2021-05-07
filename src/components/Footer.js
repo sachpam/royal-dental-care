@@ -139,12 +139,16 @@ function Footer() {
               <ListItem>
                 <Link color="#adb5bd" href="#">
                   <i class="fas fa-at"> &nbsp; &nbsp; </i>
-                  royaldentalcare@gmail.com
+                  royaldentalcare.kandy@gmail.com
                 </Link>
               </ListItem>
 
               <ListItem>
-                <Link color="#adb5bd" href="#">
+                <Link
+                  color="#adb5bd"
+                  href="https://www.facebook.com/RoyalDentalCareKandy/"
+                  target="_blank"
+                >
                   <i class="fab fa-facebook"> &nbsp; &nbsp; </i>Our FB page
                 </Link>
               </ListItem>

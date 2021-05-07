@@ -8,7 +8,7 @@ function ServiceItem({ title, text, img }) {
         p="6"
         // rounded="md"
         bg="white"
-        padding="30px"
+        // padding="30px"
         color="rgb(0, 143, 161)"
       >
         <Box
@@ -18,7 +18,7 @@ function ServiceItem({ title, text, img }) {
           marginRight="15px"
           textAlign="center"
         >
-          <Image src={img} width="317px" height="182px" padding="0 " />
+          <Image src={img} width="317px" height="189px" padding="0 " />
         </Box>
         <Box>
           <Heading
@@ -38,7 +38,6 @@ function ServiceItem({ title, text, img }) {
             {text}
           </Text>
         </Box>
-        <Box bottom="10px" height="10px" bgColor="rgb(0, 143, 161)"></Box>
       </Box>
     </>
   );

@@ -4,7 +4,7 @@ import { Grid, GridItem } from "@chakra-ui/react";
 
 function Details() {
   return (
-    <Box>
+    <Box id="details">
       <Grid
         templateColumns={[
           "repeat(1, 1fr)",

@@ -6,6 +6,7 @@ import Services from "./components/Services";
 import Review from "./components/Review";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import { Box } from "@chakra-ui/layout";
 // import Time from './components/Time/Time';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <Details />
       <Services />
       <Review />
+
       <Contact />
       <Footer />
     </div>

@@ -1,6 +1,7 @@
 import "./Main.css";
 import { Box, Heading, Text, Image } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
+import { Link } from "@chakra-ui/react";
 // import image from "../images/logo.png";
 
 function Nav() {
@@ -22,16 +23,16 @@ function Nav() {
   return (
     <Box>
       <Box
-        height="11vh"
+        // height="11vh"
         position="fixed"
         top="0"
         left="0"
         right="0"
         width="100%"
-        display="flex"
-        justifyContent="space-between"
-        alignContent="center"
-        padding="15px 100px"
+        display={["block", "block", "block", "flex"]}
+        justifyContent={["none", "none", "none", "space-between"]}
+        alignItems="center"
+        padding={["15px 10px", "15px 10px", "20px 10px", "20px 100px"]}
         zIndex="1000"
         fontFamily="Poppins"
         // backgroundColor="#262F36"
@@ -39,15 +40,16 @@ function Nav() {
         // borderBottom="1px"
         // borderBottomColor="white"
       >
-        <Box width="40vw">
+        <Box width={["100%", "100%", "100%", "40vw"]}>
           {/* <Image src={image} alt="logo" height="7vh" padding="0 5px" /> */}
           <Box>
             <Heading
               fontFamily="Poppins"
               fontWeight="lighter"
               color="white"
-              fontSize={["1rem", "2xl"]}
-              paddingTop="10px"
+              fontSize={["lg", "lg", "lg", "2xl"]}
+              // paddingTop="10px"
+              px="5"
             >
               Royal Dental Care
             </Heading>
@@ -67,19 +69,54 @@ function Nav() {
           color="white"
           fontSize={["13px"]}
           width="30vw"
-          display={["none", "none", "flex"]}
+          display={["none", "none", "none", "flex"]}
           justifyContent="space-between"
           textTransform="uppercase"
-          paddingTop="15px"
-          _hover={{
-            color: "#2b6cb0",
-          }}
+          // paddingTop="15px"
+
           fontFamily="Poppins"
         >
-          <a href="#">Home</a>
-          <a href="#">Services</a>
-          <a href="#">About</a>
-          <a href="#">Contact</a>
+          <Link
+            _hover={{
+              color: "#2b6cb0",
+            }}
+            href="#"
+          >
+            Home
+          </Link>
+          <Link
+            _hover={{
+              color: "#2b6cb0",
+            }}
+            href="#details"
+          >
+            About
+          </Link>
+          <Link
+            _hover={{
+              color: "#2b6cb0",
+            }}
+            href="#services"
+          >
+            Services
+          </Link>
+          <Link
+            _hover={{
+              color: "#2b6cb0",
+            }}
+            href="#reviews"
+          >
+            Reviews
+          </Link>
+
+          <Link
+            _hover={{
+              color: "#2b6cb0",
+            }}
+            href="#contact"
+          >
+            Contact
+          </Link>
         </Box>
       </Box>
       <Box></Box>

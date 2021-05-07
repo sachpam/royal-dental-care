@@ -10,7 +10,7 @@ import image6 from "../images/img6_1.jpg";
 
 function Services() {
   return (
-    <Box marginX="10vw" marginY="10vh">
+    <Box marginX={("0px", "0px", "0px", "10vw")} marginY="10vh" id="services">
       <Heading
         color="rgb(0, 143, 161)"
         textAlign="center"
