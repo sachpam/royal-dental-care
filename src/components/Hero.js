@@ -29,7 +29,7 @@ function Hero() {
           top="50%"
           left={["50%", "50%", "50%", "50%", "25%"]}
           transform="translate(-50%, -50%)"
-          width={["85%", "", "", ""]}
+          width={["85%", " auto ", "auto ", "auto "]}
         >
           <Fade top>
             <Heading

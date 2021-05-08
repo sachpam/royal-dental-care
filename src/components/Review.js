@@ -26,7 +26,15 @@ export default class Review extends Component {
           },
         },
         {
-          breakpoint: 750,
+          breakpoint: 800,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            initialSlide: 2,
+          },
+        },
+        {
+          breakpoint: 600,
           settings: {
             slidesToShow: 2,
             slidesToScroll: 2,
@@ -73,7 +81,7 @@ export default class Review extends Component {
             <div>
               <ReviewItem
                 name="Chinthaka Warnakulasooriya"
-                text="Dr. Nandana Rajasinghe is a wonderful dentist! I am always impressed with his knowledge of the field of dentistry, the technologies he employs to better diagnose and treat patients, and his personal attention to details both with my treatment and the time he takes to connect with me on a personal level.I happily refer my friends and family to his practice.Also The facility is clean and well kept."
+                text="Dr. Nandana Ranasinghe is a wonderful dentist! I am always impressed with his knowledge of the field of dentistry, the technologies he employs to better diagnose and treat patients, and his personal attention to details both with my treatment and the time he takes to connect with me on a personal level.I happily refer my friends and family to his practice.Also The facility is clean and well kept."
               />
             </div>
             <div>
