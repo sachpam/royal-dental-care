@@ -50,9 +50,8 @@ function Nav() {
               color="white"
               fontSize={["lg", "lg", "lg", "2xl"]}
               // paddingTop="10px"
-              px="5"
-            >
-              Royal Dental Care
+              px="5">
+              Royal Dental Care Kandy
             </Heading>
             {/* <Box
               fontFamily="roboto"
@@ -75,38 +74,33 @@ function Nav() {
           textTransform="uppercase"
           // paddingTop="15px"
 
-          fontFamily="Poppins"
-        >
+          fontFamily="Poppins">
           <Link
             _hover={{
               color: "#2b6cb0",
             }}
-            href="#"
-          >
+            href="#">
             Home
           </Link>
           <Link
             _hover={{
               color: "#2b6cb0",
             }}
-            href="#details"
-          >
+            href="#details">
             About
           </Link>
           <Link
             _hover={{
               color: "#2b6cb0",
             }}
-            href="#services"
-          >
+            href="#services">
             Services
           </Link>
           <Link
             _hover={{
               color: "#2b6cb0",
             }}
-            href="#reviews"
-          >
+            href="#reviews">
             Reviews
           </Link>
 
@@ -114,8 +108,7 @@ function Nav() {
             _hover={{
               color: "#2b6cb0",
             }}
-            href="#contact"
-          >
+            href="#contact">
             Contact
           </Link>
         </Box>

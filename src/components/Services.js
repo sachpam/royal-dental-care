@@ -16,8 +16,7 @@ function Services() {
         textAlign="center"
         margin="30px"
         marginBottom="40px"
-        textTransform="uppercase"
-      >
+        textTransform="uppercase">
         Our Services
       </Heading>
       <Grid
@@ -27,37 +26,36 @@ function Services() {
           "repeat(2, 1fr)",
           "repeat(3, 1fr)",
         ]}
-        gap={["5", "10"]}
-      >
+        gap={["5", "10"]}>
         <ServiceItem
           img={image1}
           title="Regular Checkup"
-          text="Check your oral health status to make sure everything's okay"
+          text="Routine dental checkups are important preventive appointments to examines your oral health, detects issues early, to maintain optimal dental health. Recommended every 6 months, these visits help prevent cavities, gum disease, and other dental problems, ensuring a healthy and confident smile."
         />
         <ServiceItem
           img={image2}
           title="Cosmetic Dentistry"
-          text="There are many new treatments to beautify teeth"
+          text="Cosmetic dentistry focuses on improving the appearance of the teeth, gums, and smile. It includes treatments such as teeth whitening, veneers, bonding, and gum contouring to enhance aesthetics and boost confidence."
         />
         <ServiceItem
           img={image3}
           title="Orthodontics"
-          text="loream jfdiusdf jnksdjfns djfsen kjfnsjdf ksnbnfksj fjfnksfn"
+          text="Orthodontic treatment involves straightening and aligning crooked or misaligned teeth using braces, Lingual braces  or clear aligners. It helps improve the appearance of the smile and corrects bite issues. Discreet Orthodontic option available for straightening teeth without visible brackets or wires."
         />
         <ServiceItem
           img={image4}
           title="Implants"
-          text="Lohbfusd jnbdjhd hjfhdf jbhja d bj a knjnfdj"
+          text="Dental implants are artificial tooth roots made of titanium that are surgically placed into the jawbone. They provide a stable foundation for replacement teeth, such as crowns or bridges, to restore function and aesthetics."
         />
         <ServiceItem
           img={image5}
           title="Root canal"
-          text="gvfhweduwghv uvbj djbdwjeh djbhj whbwj"
+          text="Root canal treatment is a procedure to save a tooth that is infected or decayed deep inside. The infected pulp is removed, and the inside of the tooth is cleaned and sealed to prevent further infection."
         />
         <ServiceItem
           img={image6}
           title="Crowns and Bridges"
-          text="jefwk knefwje kjnkwje nfwke jnjkn nfkwlf kejfn jknfds"
+          text="Dental crowns are caps that cover damaged teeth, restoring their strength and appearance. Bridges are prosthetic devices that replace missing teeth by bridging the gap between adjacent teeth, supported by dental crowns or implants. "
         />
       </Grid>
     </Box>

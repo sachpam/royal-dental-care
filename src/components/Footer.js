@@ -17,8 +17,7 @@ function Footer() {
         paddingX="10vw"
         paddingY="10vh"
         color="white"
-        backgroundColor="#262F36"
-      >
+        backgroundColor="#262F36">
         <Grid
           templateColumns={[
             "repeat(1, 1fr)",
@@ -26,14 +25,12 @@ function Footer() {
             "repeat(2, 1fr)",
             "30% 10% 20% 40%",
           ]}
-          gap={6}
-        >
+          gap={6}>
           <Box>
             <Heading
               fontSize={["1rem", "1rem", "2rem"]}
               fontWeight="lighter"
-              marginBottom="20px"
-            >
+              marginBottom="20px">
               ROYAL DENTAL CARE
             </Heading>
             <Text color="#adb5bd" paddingRight="40px">
@@ -46,8 +43,7 @@ function Footer() {
             <Heading
               fontSize={["1rem", "1rem", "1.5rem"]}
               fontWeight="bold"
-              marginBottom="20px"
-            >
+              marginBottom="20px">
               Links
             </Heading>
             <Text>
@@ -79,40 +75,27 @@ function Footer() {
             <Heading
               fontSize={["1rem", "1rem", "1.5rem"]}
               fontWeight="bold"
-              marginBottom="20px"
-            >
+              marginBottom="20px">
               Services
             </Heading>
             <List spacing="3">
               <ListItem>
-                <Link color="#adb5bd" href="#">
-                  Regular Checkup
-                </Link>
+                <Link color="#adb5bd">Regular Checkup</Link>
               </ListItem>
               <ListItem>
-                <Link color="#adb5bd" href="#">
-                  Orthodontics
-                </Link>
+                <Link color="#adb5bd">Orthodontics</Link>
               </ListItem>
               <ListItem>
-                <Link color="#adb5bd" href="#">
-                  Cosmetic Dentistry
-                </Link>
+                <Link color="#adb5bd">Cosmetic Dentistry</Link>
               </ListItem>
               <ListItem>
-                <Link color="#adb5bd" href="#">
-                  Implants
-                </Link>
+                <Link color="#adb5bd">Implants</Link>
               </ListItem>
               <ListItem>
-                <Link color="#adb5bd" href="#">
-                  Wisdom tooth removal
-                </Link>
+                <Link color="#adb5bd">Wisdom tooth removal</Link>
               </ListItem>
               <ListItem>
-                <Link color="#adb5bd" href="#">
-                  Crowns and Bridges
-                </Link>
+                <Link color="#adb5bd">Crowns and Bridges</Link>
               </ListItem>
             </List>
           </Box>
@@ -120,24 +103,26 @@ function Footer() {
             <Heading
               fontSize={["1rem", "1rem", "1.5rem"]}
               fontWeight="bold"
-              marginBottom="20px"
-            >
+              marginBottom="20px">
               Contact Us
             </Heading>
             <List spacing="3">
               <ListItem>
-                <Link color="#adb5bd" href="#">
-                  <i class="fas fa-map-marker-alt"> &nbsp; &nbsp; </i>680/3B
-                  Sirimawo Bandaranayaka Road, Kandy
+                <Link
+                  color="#adb5bd"
+                  href="https://maps.app.goo.gl/GSXTchX4SMfo6efg8">
+                  <i class="fas fa-map-marker-alt"> &nbsp; &nbsp; </i>Location
                 </Link>
               </ListItem>
               <ListItem>
-                <Link color="#adb5bd" href="#">
+                <Link color="#adb5bd" href="tel:+94714900047">
                   <i class="fas fa-phone-alt"> &nbsp; &nbsp; </i>0714900047
                 </Link>
               </ListItem>
               <ListItem>
-                <Link color="#adb5bd" href="#">
+                <Link
+                  color="#adb5bd"
+                  href="mailto:royaldentalcare.kandy@gmail.com">
                   <i class="fas fa-at"> &nbsp; &nbsp; </i>
                   royaldentalcare.kandy@gmail.com
                 </Link>
@@ -147,15 +132,16 @@ function Footer() {
                 <Link
                   color="#adb5bd"
                   href="https://www.facebook.com/RoyalDentalCareKandy/"
-                  target="_blank"
-                >
+                  target="_blank">
                   <i class="fab fa-facebook"> &nbsp; &nbsp; </i>Our FB page
                 </Link>
               </ListItem>
               <ListItem>
-                <Link color="#adb5bd" href="#">
+                <Link
+                  color="#adb5bd"
+                  href="https://royal-dental-care.netlify.app/">
                   <i class="fas fa-globe"> &nbsp; &nbsp; </i>
-                  www.royaldentalcare.lk
+                  https://royal-dental-care
                 </Link>
               </ListItem>
             </List>
@@ -170,9 +156,8 @@ function Footer() {
         padding="10px"
         textAlign="center"
         backgroundColor="#262F36"
-        color="#adb5bd"
-      >
-        2021 © All Rights Reserved
+        color="#adb5bd">
+        Royal Dental Care Kandy 2024 © All Rights Reserved
       </Box>
     </Box>
   );

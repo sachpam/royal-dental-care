@@ -14,8 +14,7 @@ function Hero() {
         height="100vh"
         backgroundSize="cover"
         // marginTop="10vh"
-        position="relative"
-      >
+        position="relative">
         <Box
           position="absolute"
           background="rgba(35, 37, 47, 0.7)"
@@ -29,8 +28,7 @@ function Hero() {
           top="50%"
           left={["50%", "50%", "50%", "50%", "25%"]}
           transform="translate(-50%, -50%)"
-          width={["85%", " auto ", "auto ", "auto "]}
-        >
+          width={["85%", " auto ", "auto ", "auto "]}>
           <Fade top>
             <Heading
               fontSize={["4xl", "4xl", "4xl", "7xl"]}
@@ -39,8 +37,7 @@ function Hero() {
               // bgClip="text"
               fontWeight="normal"
               fontFamily="Poppins"
-              margin="10px 0"
-            >
+              margin="10px 0">
               Your Health
             </Heading>
           </Fade>
@@ -53,9 +50,8 @@ function Hero() {
               // bgClip="text"
               fontWeight="normal"
               fontFamily="Poppins"
-              margin="10px 0"
-            >
-              Our first priority
+              margin="10px 0">
+              Our First Priority
             </Heading>
           </Fade>
 
@@ -65,20 +61,21 @@ function Hero() {
               mb="6"
               ml="1"
               fontSize={["1rem", "1rem", "1.2rem"]}
-              color="rgba(255, 255, 255, 0.5)"
-            >
-              Not sure what is going on with your teeth? <br /> Come in Today
-              for a Check up
+              color="rgba(255, 255, 255, 0.5)">
+              Not sure what is going on with your teeth? <br /> Visit Us Today
+              for FREE Consultation!
             </Text>
           </Fade>
 
           <Box>
             <Fade bottom>
               <Button
-                // as="a"
+                as="a"
                 // target="_blank"
                 // variant="outline"
+                href="tel:+94714900047"
                 background="#33a5b4"
+                fontSize={["0.7rem", "1rem", "1rem"]}
                 // color="white"
                 // _hover={{ bg: "rgb(0, 143, 161)" }}
                 // _active={{
@@ -87,7 +84,7 @@ function Hero() {
                 //   borderColor: "none",
                 // }}
               >
-                CALL US NOW
+                CALL US NOW FOR A FREE CONSULTATION +94714900047
               </Button>
             </Fade>
           </Box>

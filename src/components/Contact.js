@@ -6,25 +6,56 @@ import emailjs from "emailjs-com";
 import React from "react";
 
 export default function Contact() {
-  function sendEmail(e) {
-    e.preventDefault();
+  // Initialize EmailJS
+  // document.addEventListener("DOMContentLoaded", function () {
+  //   emailjs.init({
+  //     publicKey: "7XCg6NR2NfM8W6cZF",
+  //     // Do not allow headless browsers
+  //     blockHeadless: false,
+  //     limitRate: {
+  //       // Set the limit rate for the application
+  //       id: "app",
+  //       // Allow 1 request per 10s
+  //       throttle: 1000,
+  //     },
+  //   });
+  // });
 
+  function sendEmail(e) {
+    e.preventDefault(); // Prevent form submission from reloading the page
+
+    emailjs.init({
+      publicKey: "7XCg6NR2NfM8W6cZF",
+      // Do not allow headless browsers
+      blockHeadless: true,
+      limitRate: {
+        // Set the limit rate for the application
+        id: "app",
+        // Allow 1 request per 10s
+        throttle: 20000,
+      },
+    });
+
+    // Send email using EmailJS
     emailjs
       .sendForm(
-        "service_71sp1ec",
-        "template_h4ccrjk",
+        "service_9rr9yoq",
+        "template_mcvjrez",
         e.target,
-        "user_Jps3fD5dlYHQ4vLgvhHD7"
+        "7XCg6NR2NfM8W6cZF"
       )
       .then(
-        (result) => {
-          console.log(result.text);
+        function (response) {
+          console.log("Email sent successfully!", response);
+          // Optionally, display a success message to the user
+          alert("Email sent successfully!");
         },
-        (error) => {
-          console.log(error.text);
+        function (error) {
+          console.error("Email could not be sent:", error);
+          // Optionally, display an error message to the user
+          alert("Error sending email. Please try again later.");
         }
       );
-    e.target.reset();
   }
 
   return (
@@ -34,28 +65,23 @@ export default function Contact() {
       justifyContent={["none", "none", "space-between"]}
       marginX={["20px", "10vw"]}
       marginBottom="10vh"
-      marginTop="15vh"
-    >
+      marginTop="15vh">
       <Box
         marginBottom={["0px", "0px", "0px", "20px"]}
         Width={["100px", "100px", "50px", "30vw"]}
-        boxSizing="border-box"
-      >
+        boxSizing="border-box">
         <Heading
           fontSize={["1.3rem", "2xl", "4xl"]}
           color="rgb(0, 143, 161)"
           marginBottom="50px"
           textTransform="uppercase"
-          textAlign={["center", "center", "left", ""]}
-        >
+          textAlign={["center", "center", "left", ""]}>
           Contact Us
         </Heading>
         <Text paddingRight={["30px", "30px", "30px", "20px"]}>
-          Lorem Ipsum is simply du my text of the pritin industry. Lorm Ipsum
-          hasbeen the industry's standardsdummy text eversince the 1500s, when
-          an unknown printer took a galley of type and scramble it to make type
-          specimen book. It has survived not only five centurie, but also the
-          leap into
+          Contact us for a FREE consultation. Please note that an appointment is
+          required prior to your visit. If you have any inquiries, feel free to
+          send us a message.
         </Text>
       </Box>
       <Box>
@@ -65,8 +91,7 @@ export default function Contact() {
           marginTop="20px"
           boxShadow="xl"
           padding="20px"
-          className="container"
-        >
+          className="container">
           <form onSubmit={sendEmail}>
             <div className="row pt-5 mx-auto">
               <div className="col-8 form-group mx-auto">
@@ -74,29 +99,21 @@ export default function Contact() {
                   variant="outline"
                   placeholder="Enter Full Name"
                   className="form-control"
-                  name="from_name"
+                  name="sender_name"
                   marginBottom="15px"
+                  required
                 />
               </div>
               <div className="col-8 form-group pt-2 mx-auto">
                 <Input
                   variant="outline"
                   placeholder="Enter Email"
-                  type="email"
+                  type="sender_email"
                   className="form-control"
                   placeholder="Email Address"
-                  name="email"
+                  name="sender_email"
                   marginBottom="15px"
-                />
-              </div>
-              <div className="col-8 form-group pt-2 mx-auto">
-                <input
-                  hidden
-                  type="text"
-                  className="form-control"
-                  placeholder="Subject"
-                  name="subject"
-                  value=""
+                  required
                 />
               </div>
               <div className="col-8 form-group pt-2 mx-auto">
@@ -107,7 +124,7 @@ export default function Contact() {
                   rows="8"
                   placeholder="Your message"
                   name="message"
-                ></Textarea>
+                  required></Textarea>
               </div>
               <div className="col-8 pt-3 mx-auto">
                 <Button
@@ -116,8 +133,7 @@ export default function Contact() {
                   marginY="30px"
                   type="submit"
                   className="btn btn-info"
-                  value="Send Message"
-                >
+                  value="Send Message">
                   Submit
                 </Button>
               </div>
