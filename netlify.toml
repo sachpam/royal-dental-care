@@ -1,2 +1,7 @@
 [build]
-  command = "react-scripts --openssl-legacy-provider build"
+  command = "react-scripts build"
+  publish = "build"
+
+[build.environment]
+  NODE_ENV = "production"
+  NODE_OPTIONS = "--openssl-legacy-provider"
